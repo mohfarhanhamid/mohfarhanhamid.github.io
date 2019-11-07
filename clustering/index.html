@@ -1,0 +1,1414 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Repository Untuk Tugas">
+      
+      
+        <link rel="canonical" href="https://mohfarhanhamid.github.io/clustering/">
+      
+      
+        <meta name="author" content="Moh.Farhan Hamid">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>clutering - (180411100132) Moh.Farhan Hamid</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../manifest.webmanifest">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-XXXXXXXX-X", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#clustering" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://mohfarhanhamid.github.io/" title="(180411100132) Moh.Farhan Hamid" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              (180411100132) Moh.Farhan Hamid
+            </span>
+            <span class="md-header-nav__topic">
+              
+                clutering
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/mohfarhanhamid/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Moh.Farhan Hamid
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://mohfarhanhamid.github.io/" title="(180411100132) Moh.Farhan Hamid" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    (180411100132) Moh.Farhan Hamid
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/mohfarhanhamid/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Moh.Farhan Hamid
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="index" class="md-nav__link">
+      index
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Statistika Data/" title="Statistik Deskriptif" class="md-nav__link">
+      Statistik Deskriptif
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Tugas 2/" title="Jarak" class="md-nav__link">
+      Jarak
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Untitled8/" title="MISSING VELUES" class="md-nav__link">
+      MISSING VELUES
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DECISION TREE/" title="DECISION TREE" class="md-nav__link">
+      DECISION TREE
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        clutering
+      </label>
+    
+    <a href="./" title="clutering" class="md-nav__link md-nav__link--active">
+      clutering
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-dengan-pendekatan-partisi" class="md-nav__link">
+    Clustering dengan pendekatan partisi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algoritma-k-means" class="md-nav__link">
+    Algoritma K-Means
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-means" class="md-nav__link">
+    Rumus K-Means
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-k-modes" class="md-nav__link">
+    Metode K-Modes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-k-prototype" class="md-nav__link">
+    Metode K-Prototype
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algoritma-k-prototype" class="md-nav__link">
+    Algoritma K-Prototype
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-prototype" class="md-nav__link">
+    Rumus K-Prototype
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-dengan-pendekatan-hirarki" class="md-nav__link">
+    Clustering dengan Pendekatan Hirarki
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-dengan-pendekatan-automatic-mapping-self-organising-mapsom" class="md-nav__link">
+    Clustering Dengan Pendekatan Automatic Mapping (Self-Organising Map/SOM)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-k-modes_1" class="md-nav__link">
+    Metode K-Modes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-k-prototype_1" class="md-nav__link">
+    Metode K-Prototype
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algoritma-k-prototype_1" class="md-nav__link">
+    Algoritma K-Prototype
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-dengan-pendekatan-partisi" class="md-nav__link">
+    Clustering dengan pendekatan partisi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algoritma-k-means" class="md-nav__link">
+    Algoritma K-Means
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-means" class="md-nav__link">
+    Rumus K-Means
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-k-modes" class="md-nav__link">
+    Metode K-Modes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metode-k-prototype" class="md-nav__link">
+    Metode K-Prototype
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algoritma-k-prototype" class="md-nav__link">
+    Algoritma K-Prototype
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rumus-k-prototype" class="md-nav__link">
+    Rumus K-Prototype
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-dengan-pendekatan-hirarki" class="md-nav__link">
+    Clustering dengan Pendekatan Hirarki
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-dengan-pendekatan-automatic-mapping-self-organising-mapsom" class="md-nav__link">
+    Clustering Dengan Pendekatan Automatic Mapping (Self-Organising Map/SOM)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-k-modes_1" class="md-nav__link">
+    Metode K-Modes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metode-k-prototype_1" class="md-nav__link">
+    Metode K-Prototype
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algoritma-k-prototype_1" class="md-nav__link">
+    Algoritma K-Prototype
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/mohfarhanhamid/edit/master/docs/clustering.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="clustering">CLUSTERING<a class="headerlink" href="#clustering" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Clustering adalah metode penganalisaan data yang sering dimasukkan sebagai salah satu metode <em>Data Mining</em> yang tujuannya adalah untuk mengelompokkan data dengan karakteristik yang sama ke suatu wilayah yang sama dan data dengan karakteristik yang berbeda ke wilayah yang lain.</p>
+</blockquote>
+<p>​   Ada beberapa pendekatan yang digunakan dalam mengembangkan metode clustering, dua pendekatan utama adalah clustering dengan pendekatan partisi dan clustering dengan pendekatan hirarki. Clustering dengan pendekatan partisi atau sering disebut dengan <em>partition-based clustering</em> mengelompokkan data dengan memilah-milah data yang dianalisa ke dalam cluster-cluster yang ada. Clustering dengan pendekatan hirarki atau sering disebut dengan <em>hierarchical clustering</em> mengelompokkan data dengan membuat suatu hirarki berupa dendogram dimana data yang mirip akan ditempatkan pada hirarki yang berdekatan dan yang tidak pada hirarki yang berjauhan. Di samping kedua pendekatan tersebut, ada juga clustering dengan pendekatan <em>automatic mapping</em> (Self-Organising Map/SOM).</p>
+<h2 id="clustering-dengan-pendekatan-partisi"><strong>Clustering dengan pendekatan partisi</strong><a class="headerlink" href="#clustering-dengan-pendekatan-partisi" title="Permanent link">&para;</a></h2>
+<p><em>1. K-Means</em></p>
+<p>​   Salah satu metode yang banyak digunakan dalam melakukan clustering dengan partisi ini adalah metode k-means. Secara umum metode k-means ini melakukan proses pengelompokan dengan prosedur sebagai berikut:</p>
+<p>·         Tentukan jumlah cluster</p>
+<p>·         Alokasikan data secara random ke cluster yang ada</p>
+<p>·         Hitung rata-rata setiap cluster dari data yang tergabung di dalamnya</p>
+<p>·         Alokasikan kembali semua data ke cluster terdekat</p>
+<p>·         Ulang proses nomor 3, sampai tidak ada perubahan atau perubahan yang terjadi masih sudah di bawah treshold</p>
+<p>​   Prosedur dasar ini bisa berubah mengikuti pendekatan pengalokasian data yang diterapkan, apakah <em>crisp</em> atau <em>fuzzy</em>. Setelah meneliti clustering dari sudut yang lain, saya menemukan bahwa <em>k-means clustering</em> mempunyai beberapa kelemahan. Fungsi dari algoritma ini adalah mengelompokkan data kedalam beberapa cluster. karakteristik dari algoritma ini adalah :</p>
+<p>.           Memiliki n buah data.</p>
+<p>.           Input berupa jumlah data dan jumlah cluster (kelompok).</p>
+<p>.           Pada setiap cluster/kelompok memiliki sebuah centroid yang mempresentasikan cluster tersebut.</p>
+<h4 id="algoritma-k-means"><strong>Algoritma K-Means</strong><a class="headerlink" href="#algoritma-k-means" title="Permanent link">&para;</a></h4>
+<p>​   Secara sederhana algoritma K-Means dimulai dari tahap berikut :</p>
+<p>.       Pilih K buah titik centroid.</p>
+<p>.       Menghitung jarak data dengan centroid.</p>
+<p>.       Update nilai titik centroid.</p>
+<p>.       Ulangi langkah 2 dan 3 sampai nilai dari titik centroid tidak lagi berubah.</p>
+<h4 id="rumus-k-means">Rumus K-Means<a class="headerlink" href="#rumus-k-means" title="Permanent link">&para;</a></h4>
+<p><img alt="img" src="https://4.bp.blogspot.com/-rb2XXOayk-Q/VhPREJBapVI/AAAAAAAAA9E/HXibvUie9nk/s1600/Rumus%2BEuclidian%2BDistance.png" /></p>
+<h4 id="metode-k-modes"><strong>Metode K-Modes</strong><a class="headerlink" href="#metode-k-modes" title="Permanent link">&para;</a></h4>
+<p>​   K-Modes merupakan pengembangan dari algoritma clustering K-means untuk menangani data kategorik di mana means diganti oleh modes. K-Modes menggunakan simple matching meassure dalam penentuan similarity dari suatu klaster.</p>
+<h4 id="metode-k-prototype"><strong>Metode K-Prototype</strong><a class="headerlink" href="#metode-k-prototype" title="Permanent link">&para;</a></h4>
+<p>​   Tujuan dari simulasi ini adalah mencoba menerapkan algoritma K-Prototype pada data campuran  numerik  dan  kategorikal. Ada  tahap preparation diperlakukan terhadap data point numerik normalisasi terlebih dahulu.</p>
+<h4 id="algoritma-k-prototype"><strong>Algoritma K-Prototype</strong><a class="headerlink" href="#algoritma-k-prototype" title="Permanent link">&para;</a></h4>
+<p>​   Sebelum  masuk  proses  algoritma  K-Prototypes  tentukan  jumlah k yang  akan  dibentuk batasannya minimal 2 dan maksimal √n atau n/2 dimana n adalah jumlah data point atau obyek</p>
+<p>.       Tahap 1 : Tentukan K dengan inisial kluster z1, z2, ..., zk secara acak dari n buah titik {x1, x2, ..., xn}</p>
+<p>.       Tahap 2 : Hitung jarak seluruh data point pada data set terhadap inisial kluster awal, alokasikan data point ke dalam cluster yang memiliki jarak prototype terdekat dengan object yang diukur.</p>
+<p>.       Tahap 3 : Hitung titik pusat cluster yang baru setelah semua objek dialokasikan. Lalu realokasikan semua datapoint pada dataset terhadap prototype yang baru.</p>
+<p>.       Tahap 4 : jika titik pusat cluster tidak berubah atau sudah konvergen maka proses algoritma berhenti tetapi jika titik pusat masih berubah-ubah secara signifikan maka proses kembali ke tahap 2 dan 3 hingga iterasi maksimum tercapai atau sudah tidak ada perpindahan objek. </p>
+<h4 id="rumus-k-prototype"><strong>Rumus K-Prototype</strong><a class="headerlink" href="#rumus-k-prototype" title="Permanent link">&para;</a></h4>
+<p><img alt="img" src="https://miro.medium.com/max/558/1*HxkHjH647N_9wKjqUBeJiw.png" /></p>
+<p><em>2. Mixture Modelling (Mixture Modeling)</em></p>
+<p>​   Mixture modelling merupakan metode pengelompokan data yang mirip dengan k-means dengan kelebihan penggunaan distribusi statistik dalam mendefinisikan setiap cluster yang ditemukan. Dibandingkan dengan k-means yang hanya menggunakan cluster center, penggunaan distribusi statistik ini mengijinkan kita untuk:</p>
+<p>·         Memodel data yang kita miliki dengan setting karakteristik yang berbeda-beda</p>
+<p>·         Jumlah cluster yang sesuai dengan keadaan data bisa ditemukan seiring dengan proses pemodelan karakteristik dari masing-masing cluster</p>
+<p>·         Hasil pemodelan clustering yang dilaksanakan bisa diuji tingkat keakuratannya</p>
+<p>​   Distribusi statistik yang digunakan bisa bermacam-macam mulai dari yang digunakan untuk data categorical sampai yang continuous, termasuk di antaranya distribusi binomial, multinomial, normal dan lain-lain. Beberapa distribusi yang bersifat tidak normal seperti distribusi Poisson, von-Mises, Gamma dan Student t, juga diterapkan untuk bisa mengakomodasi berbagai keadaan data yang ada di lapangan. Beberapa pendekatan multivariate juga banyak diterapkan untuk memperhitungkan tingkat keterkaitan antara variabel data yang satu dengan yang lainnya.</p>
+<h2 id="clustering-dengan-pendekatan-hirarki"><strong>Clustering dengan Pendekatan Hirarki</strong><a class="headerlink" href="#clustering-dengan-pendekatan-hirarki" title="Permanent link">&para;</a></h2>
+<p>​   Clustering dengan pendekatan hirarki mengelompokkan data yang mirip dalam hirarki yang sama dan yang tidak mirip di hirarki yang agak jauh. Ada dua metode yang sering diterapkan yaitu <em>agglomerative hieararchical clustering</em> dan <em>divisive hierarchical clustering</em>. Agglomerative melakukan proses clustering dari <em>N</em> cluster menjadi satu kesatuan cluster, dimana <em>N</em> adalah jumlah data, sedangkan divisive melakukan proses clustering yang sebaliknya yaitu dari satu cluster menjadi <em>N</em> cluster.</p>
+<p>​   Beberapa metode <em>hierarchical clustering</em> yang sering digunakan dibedakan menurut cara mereka untuk menghitung tingkat kemiripan. Ada yang menggunakan <em>Single Linkage</em>, <em>Complete Linkage</em>, <em>Average Linkage</em>, <em>Average Group Linkage</em> dan lain-lainnya. Seperti juga halnya dengan <em>partition-based clustering</em>, kita juga bisa memilih jenis jarak yang digunakan untuk menghitung tingkat kemiripan antar data.</p>
+<p>​   Salah satu cara untuk mempermudah pengembangan dendogram untuk hierarchical clustering ini adalah dengan membuat similarity matrix yang memuat tingkat kemiripan antar data yang dikelompokkan. Tingkat kemiripan bisa dihitung dengan berbagai macam cara seperti dengan Euclidean Distance Space. Berangkat dari similarity matrix ini, kita bisa memilih lingkage jenis mana yang akan digunakan untuk mengelompokkan data yang dianalisa.</p>
+<h2 id="clustering-dengan-pendekatan-automatic-mapping-self-organising-mapsom"><strong>Clustering Dengan Pendekatan Automatic Mapping (Self-Organising Map/SOM)</strong><a class="headerlink" href="#clustering-dengan-pendekatan-automatic-mapping-self-organising-mapsom" title="Permanent link">&para;</a></h2>
+<p>​   Self-Organising Map merupakan suatu tipe Artificial Neural Networks yang di-training secara unsupervised. SOM menghasilkan map yang terdiri dari output dalam dimensi yang rendah (2 atau 3 dimensi). Map ini berusaha mencari property dari input data. Komposisi input dan output dalam SOM mirip dengan komposisi dari proses feature scaling (multidimensional scaling).</p>
+<p>​   Walaupun proses learning yang dilakukan mirip dengan Artificial Neural Networks, tetapi proses untuk meng-assign input data ke map, lebih mirip dengan K-Means dan kNN Algorithm. Adapun prosedur yang ditempuh dalam melakukan clustering dengan SOM adalah sebagai berikut:</p>
+<p>·         Tentukan weight dari input data secara random</p>
+<p>·         Pilih salah satu input data</p>
+<p>·         Hitung tingkat kesamaan (dengan Eucledian) antara input data dan weight dari input data tersebut dan pilih input data yang memiliki kesamaan dengan weight yang ada (data ini disebut dengan Best Matching Unit (BMU))</p>
+<p>·         Perbaharui weight dari input data dengan mendekatkan weight tersebut ke BMU dengan rumus:</p>
+<p><em>Wv(t+1) = Wv(t) + Theta(v, t) x Alpha(t) x (D(t) – Wv(t))</em></p>
+<p>Dimana:</p>
+<p>o    <em>Wv(t)</em>: Weight pada saat ke-t</p>
+<p>o    <em>Theta (v, t)</em>: Fungsi neighbourhood yang tergantung pada Lattice distance antara BMU dengan neuron v. Umumnya bernilai 1 untuk neuron yang cukup dekat dengan BMU, dan 0 untuk yang sebaliknya. Penggunaan fungsi Gaussian juga memungkinkan.</p>
+<p>o    <em>Alpha (t)</em>: Learning Coefficient yang berkurang secara monotonic</p>
+<p>o    <em>D(t)</em>: Input data</p>
+<p>·         Tambah nilai t, sampai t &lt; <em>Lambda</em>, dimana <em>Lambda</em> adalah jumlah iterasi</p>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$$','$$']]}
+});
+</script>
+
+<p><script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script></p>
+<h2 id="metode-k-modes_1"><strong>Metode K-Modes</strong><a class="headerlink" href="#metode-k-modes_1" title="Permanent link">&para;</a></h2>
+<div style= "justify">K-Modes merupakan pengembangan dari algoritma clustering K-means untuk menangani data kategorik di mana means diganti oleh modes. K-Modes menggunakan simple matching meassure dalam penentuan similarity dari suatu klaster. </div>
+
+<h2 id="metode-k-prototype_1"><strong>Metode K-Prototype</strong><a class="headerlink" href="#metode-k-prototype_1" title="Permanent link">&para;</a></h2>
+<div style= "justify">Tujuan dari simulasi ini adalah mencoba menerapkan algoritma K-Prototype pada data campuran  numerik  dan  kategorikal. Ada  tahap preparation diperlakukan terhadap data point numerik normalisasi terlebih dahulu. </div>
+
+<h3 id="algoritma-k-prototype_1"><strong>Algoritma K-Prototype</strong><a class="headerlink" href="#algoritma-k-prototype_1" title="Permanent link">&para;</a></h3>
+<div style= "justify">Sebelum  masuk  proses  algoritma  K-Prototypes  tentukan  jumlah k yang  akan  dibentuk batasannya minimal 2 dan maksimal √n atau n/2 dimana n adalah jumlah data point atau obyek</div>
+
+<ol>
+    <li>Tahap 1:
+    <p>
+        Tentukan K dengan inisial kluster z1, z2, 
+...,zk secara acak dari n buah titik {x1, 
+x2,...,xn} 
+        </p></li>
+    <li>Tahap  2
+    <p>
+        Hitung  jarak  seluruh  data  point  pada  datas
+et  terhadap  inisial  kluster  awal, 
+alokasikan  data  point  ke  dalam  cluster  yang  memilik
+i  jarak  prototype  terdekat 
+dengan object yang diukur. 
+        </p></li>
+    <li>Tahap  3
+    <p>
+        Hitung  titik  pusat  cluster  yang  baru  setela
+h  semua  objek  dialokasikan.  Lalu 
+realokasikan semua datapoint pada dataset terhadap 
+prototype yang baru 
+        </p></li>
+    <li>Tahap  4
+    <p>
+        jika  titik  pusat  cluster  tidak  berubah  ata
+u  sudah  konvergen  maka  proses 
+algoritma  berhenti  tetapi  jika  titik  pusat  masih  be
+rubah-ubah  secara  signifikan 
+maka  proses  kembali  ke  tahap  2  dan  3  hingga  iterasi
+  maksimum  tercapai  atau 
+sudah tidak ada perpindahan objek. 
+        </p></li>
+</ol>
+
+<p>berikut contoh clustering menggunakan sklearn</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="kn">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+</style>
+
+
+
+</div>
+
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;***** Train_Set *****&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;***** Test_Set *****&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>***** Train_Set *****
+   PassengerId  Survived  Pclass  \
+0            1         0       3   
+1            2         1       1   
+2            3         1       3   
+3            4         1       1   
+4            5         0       3
+
+                                                Name     Sex   Age  SibSp  \
+0                            Braund, Mr. Owen Harris    male  22.0      1   
+1  Cumings, Mrs. John Bradley (Florence Briggs Th...  female  38.0      1   
+2                             Heikkinen, Miss. Laina  female  26.0      0   
+3       Futrelle, Mrs. Jacques Heath (Lily May Peel)  female  35.0      1   
+4                           Allen, Mr. William Henry    male  35.0      0
+
+   Parch            Ticket     Fare Cabin Embarked  
+0      0         A/5 21171   7.2500   NaN        S  
+1      0          PC 17599  71.2833   C85        C  
+2      0  STON/O2. 3101282   7.9250   NaN        S  
+3      0            113803  53.1000  C123        S  
+4      0            373450   8.0500   NaN        S
+</pre></div>
+
+
+<p>​  <br />
+​    <strong><em>*</em> Test_Set </strong>***
+​       PassengerId  Pclass                                          Name     Sex  \
+​    0          892       3                              Kelly, Mr. James    male <br />
+​    1          893       3              Wilkes, Mrs. James (Ellen Needs)  female <br />
+​    2          894       2                     Myles, Mr. Thomas Francis    male <br />
+​    3          895       3                              Wirz, Mr. Albert    male <br />
+​    4          896       3  Hirvonen, Mrs. Alexander (Helga E Lindqvist)  female <br />
+​  <br />
+​        Age  SibSp  Parch   Ticket     Fare Cabin Embarked<br />
+​    0  34.5      0      0   330911   7.8292   NaN        Q<br />
+​    1  47.0      1      0   363272   7.0000   NaN        S<br />
+​    2  62.0      0      0   240276   9.6875   NaN        Q<br />
+​    3  27.0      0      0   315154   8.6625   NaN        S<br />
+​    4  22.0      1      1  3101298  12.2875   NaN        S  </p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;***** Train_Set *****&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;***** Test_Set *****&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>***** Train_Set *****
+       PassengerId    Survived      Pclass         Age       SibSp  \
+count   891.000000  891.000000  891.000000  714.000000  891.000000   
+mean    446.000000    0.383838    2.308642   29.699118    0.523008   
+std     257.353842    0.486592    0.836071   14.526497    1.102743   
+min       1.000000    0.000000    1.000000    0.420000    0.000000   
+25%     223.500000    0.000000    2.000000   20.125000    0.000000   
+50%     446.000000    0.000000    3.000000   28.000000    0.000000   
+75%     668.500000    1.000000    3.000000   38.000000    1.000000   
+max     891.000000    1.000000    3.000000   80.000000    8.000000
+
+            Parch        Fare  
+count  891.000000  891.000000  
+mean     0.381594   32.204208  
+std      0.806057   49.693429  
+min      0.000000    0.000000  
+25%      0.000000    7.910400  
+50%      0.000000   14.454200  
+75%      0.000000   31.000000  
+max      6.000000  512.329200
+</pre></div>
+
+
+<p>​  <br />
+​    <strong><em>*</em> Test_Set </strong>***
+​           PassengerId      Pclass         Age       SibSp       Parch        Fare
+​    count   418.000000  418.000000  332.000000  418.000000  418.000000  417.000000
+​    mean   1100.500000    2.265550   30.272590    0.447368    0.392344   35.627188
+​    std     120.810458    0.841838   14.181209    0.896760    0.981429   55.907576
+​    min     892.000000    1.000000    0.170000    0.000000    0.000000    0.000000
+​    25%     996.250000    1.000000   21.000000    0.000000    0.000000    7.895800
+​    50%    1100.500000    3.000000   27.000000    0.000000    0.000000   14.454200
+​    75%    1204.750000    3.000000   39.000000    1.000000    0.000000   31.500000
+​    max    1309.000000    3.000000   76.000000    8.000000    9.000000  512.329200</p>
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="p">[</span><span class="s1">&#39;PassengerId&#39;</span> <span class="s1">&#39;Survived&#39;</span> <span class="s1">&#39;Pclass&#39;</span> <span class="s1">&#39;Name&#39;</span> <span class="s1">&#39;Sex&#39;</span> <span class="s1">&#39;Age&#39;</span> <span class="s1">&#39;SibSp&#39;</span> <span class="s1">&#39;Parch&#39;</span>
+ <span class="s1">&#39;Ticket&#39;</span> <span class="s1">&#39;Fare&#39;</span> <span class="s1">&#39;Cabin&#39;</span> <span class="s1">&#39;Embarked&#39;</span><span class="p">]</span>
+<span class="n">train</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>[&#39;PassengerId&#39; &#39;Survived&#39; &#39;Pclass&#39; &#39;Name&#39; &#39;Sex&#39; &#39;Age&#39; &#39;SibSp&#39; &#39;Parch&#39;
+ &#39;Ticket&#39; &#39;Fare&#39; &#39;Cabin&#39; &#39;Embarked&#39;]
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="codehilite"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;*****In the train set*****&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;*****In the test set*****&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>*****In the train set*****
+PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age            177
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+</pre></div>
+
+
+<p>​  <br />
+​    <strong><em>*</em>In the test set</strong>***
+​    PassengerId      0
+​    Pclass           0
+​    Name             0
+​    Sex              0
+​    Age             86
+​    SibSp            0
+​    Parch            0
+​    Ticket           0
+​    Fare             1
+​    Cabin          327
+​    Embarked         0
+​    dtype: int64</p>
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">test</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>PassengerId      0
+Survived         0
+Pclass           0
+Name             0
+Sex              0
+Age              0
+SibSp            0
+Parch            0
+Ticket           0
+Fare             0
+Cabin          687
+Embarked         2
+dtype: int64
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Ticket&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>0           A/5 21171
+1            PC 17599
+2    STON/O2. 3101282
+3              113803
+4              373450
+Name: Ticket, dtype: object
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Cabin&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>0     NaN
+1     C85
+2     NaN
+3    C123
+4     NaN
+Name: Cabin, dtype: object
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="p">[[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="s1">&#39;Survived&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">as_index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0.629630</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>0.472826</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>0.242363</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="p">[[</span><span class="s2">&quot;Sex&quot;</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Sex&#39;</span><span class="p">],</span> <span class="n">as_index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sex</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>female</td>
+      <td>0.742038</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>male</td>
+      <td>0.188908</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="p">[[</span><span class="s2">&quot;SibSp&quot;</span><span class="p">,</span> <span class="s2">&quot;Survived&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;SibSp&#39;</span><span class="p">],</span> <span class="n">as_index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SibSp</th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0.535885</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>0.464286</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0.345395</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>0.250000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>0.166667</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>8</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="codehilite"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x19449c70a20&gt;
+</pre></div>
+
+
+<p><img alt="png" src="gambar1.png" /></p>
+<div class="codehilite"><pre><span></span><span class="n">grid</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">FacetGrid</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s1">&#39;Survived&#39;</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="s1">&#39;Pclass&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mf">1.6</span><span class="p">)</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">,</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">grid</span><span class="o">.</span><span class="n">add_legend</span><span class="p">();</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>F:\anaqonda\lib\site-packages\seaborn\axisgrid.py:230: UserWarning: The `size` paramter has been renamed to `height`; please update your code.
+  warnings.warn(msg, UserWarning)
+</pre></div>
+
+
+<p><img alt="" src="gambar2.png" /></p>
+<div class="codehilite"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 12 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Name           891 non-null object
+Sex            891 non-null object
+Age            891 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Ticket         891 non-null object
+Fare           891 non-null float64
+Cabin          204 non-null object
+Embarked       889 non-null object
+dtypes: float64(2), int64(5), object(5)
+memory usage: 83.6+ KB
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">train</span> <span class="o">=</span> <span class="n">train</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;Ticket&#39;</span><span class="p">,</span> <span class="s1">&#39;Cabin&#39;</span><span class="p">,</span><span class="s1">&#39;Embarked&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;Ticket&#39;</span><span class="p">,</span> <span class="s1">&#39;Cabin&#39;</span><span class="p">,</span><span class="s1">&#39;Embarked&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">labelEncoder</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">labelEncoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">])</span>
+<span class="n">labelEncoder</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">])</span>
+<span class="n">train</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">labelEncoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">])</span>
+<span class="n">test</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">labelEncoder</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">])</span>
+<span class="n">train</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 8 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Sex            891 non-null int32
+Age            891 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Fare           891 non-null float64
+dtypes: float64(2), int32(1), int64(5)
+memory usage: 52.3 KB
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 418 entries, 0 to 417
+Data columns (total 7 columns):
+PassengerId    418 non-null int64
+Pclass         418 non-null int64
+Sex            418 non-null int32
+Age            418 non-null float64
+SibSp          418 non-null int64
+Parch          418 non-null int64
+Fare           418 non-null float64
+dtypes: float64(2), int32(1), int64(4)
+memory usage: 21.3 KB
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Survived&#39;</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">])</span>
+<span class="n">train</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 891 entries, 0 to 890
+Data columns (total 8 columns):
+PassengerId    891 non-null int64
+Survived       891 non-null int64
+Pclass         891 non-null int64
+Sex            891 non-null int32
+Age            891 non-null float64
+SibSp          891 non-null int64
+Parch          891 non-null int64
+Fare           891 non-null float64
+dtypes: float64(2), int32(1), int64(5)
+memory usage: 52.3 KB
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">kmeans</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> 
+<span class="n">kmeans</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>KMeans(algorithm=&#39;auto&#39;, copy_x=True, init=&#39;k-means++&#39;, max_iter=300,
+       n_clusters=2, n_init=10, n_jobs=None, precompute_distances=&#39;auto&#39;,
+       random_state=None, tol=0.0001, verbose=0)
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+    <span class="n">predict_me</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">))</span>
+    <span class="n">predict_me</span> <span class="o">=</span> <span class="n">predict_me</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">predict_me</span><span class="p">))</span>
+    <span class="n">prediction</span> <span class="o">=</span> <span class="n">kmeans</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">predict_me</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">correct</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>0.49158249158249157
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>
+</pre></div>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$$','$$']]}
+});
+</script>
+
+<p><script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script></p>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$$','$$']]}
+});
+</script>
+
+<p><script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script></p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../DECISION TREE/" title="DECISION TREE" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                DECISION TREE
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 - 2020 Moh.Farhan Hamid
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/mohfarhanhamid" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
